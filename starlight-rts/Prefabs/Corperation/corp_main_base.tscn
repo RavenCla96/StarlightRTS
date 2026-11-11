@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b3rwesq7wsgok"]
+
+[ext_resource type="Texture2D" uid="uid://bowewmbh0lkkn" path="res://Resources/Sprites/Corperation_Basic_Building.png" id="1_n4bhr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7bqq4"]
+size = Vector2(64, 51)
+
+[node name="Corp_Main_Base" type="Sprite2D" unique_id=1443006354]
+texture = ExtResource("1_n4bhr")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=728316763]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=818425656]
+position = Vector2(0, 6.5)
+shape = SubResource("RectangleShape2D_7bqq4")
